@@ -1,9 +1,17 @@
-function App() {
-  return (
-    <h1 className="text-4xl font-bold text-red-500">
-      Tailwind is working
-    </h1>
-  );
-}
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+    import Login from "./pages/Login";
+    import Dashboard from "./pages/Dashboard";
 
-export default App;
+    function App() {
+      return (
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+          </Routes>
+        </BrowserRouter>
+      );
+    }
+
+    export default App;
+    
