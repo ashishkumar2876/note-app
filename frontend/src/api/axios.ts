@@ -2,7 +2,7 @@ import axios from "axios";
     import { useAuthStore } from "../store/auth";
 
     const api = axios.create({
-      baseURL: "http://localhost:4000/api",
+      baseURL: "https://note-app-backend-pgqm.onrender.com",
     });
 
     api.interceptors.request.use((config) => {
