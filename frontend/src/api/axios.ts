@@ -1,5 +1,5 @@
 import axios from "axios";
-    import { useAuthStore } from "../store/auth";
+    import { useAuthStore } from "../store/auth/api";
 
     const api = axios.create({
       baseURL: "https://note-app-backend-pgqm.onrender.com",
