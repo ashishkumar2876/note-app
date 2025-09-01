@@ -1,8 +1,8 @@
 import axios from "axios";
-    import { useAuthStore } from "../store/auth/api";
+    import { useAuthStore } from "../store/auth";
 
     const api = axios.create({
-      baseURL: "https://note-app-backend-pgqm.onrender.com",
+      baseURL: "https://note-app-backend-pgqm.onrender.com/api",
     });
 
     api.interceptors.request.use((config) => {
