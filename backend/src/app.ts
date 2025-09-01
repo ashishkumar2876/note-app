@@ -5,7 +5,7 @@ import notesRoutes from "./routes/notes.routes";
 
 const app = express();
 
-app.use(cors({ "https://note-app-w476.onrender.com", credentials: true }));
+app.use(cors({origin:"https://note-app-w476.onrender.com", credentials: true }));
 app.use(express.json());
 
 // Routes (empty for now, we’ll add them in Step 3)
