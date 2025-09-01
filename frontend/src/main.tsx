@@ -6,7 +6,7 @@
 
     ReactDOM.createRoot(document.getElementById('root')!).render(
       <React.StrictMode>
-        <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID || ""}>
+        <GoogleOAuthProvider clientId={"936342856446-d162ir6mr18h0o30divns5q9m7g3oei7.apps.googleusercontent.com"}>
           <App />
         </GoogleOAuthProvider>
       </React.StrictMode>
